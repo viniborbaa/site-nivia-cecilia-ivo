@@ -30,15 +30,18 @@ export default function GuestGuide() {
 
           {/* Monograma com data */}
           <div className={styles.monogramRow}>
-            <span className={styles.monogramDate}>25.07</span>
-            <Image
-              src="/images/monograma-logo.png"
-              alt="C & I"
-              width={125}
-              height={125}
-              style={{ objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(28%) sepia(20%) saturate(600%) hue-rotate(10deg) brightness(85%)' }}
-            />
-            <span className={styles.monogramDate}>2026</span>
+            <span className={`${styles.monogramDate} ${styles.monogramDateSide}`}>25.07</span>
+            <div className={styles.monogramCenter}>
+              <Image
+                src="/images/monograma-logo.png"
+                alt="C & I"
+                width={125}
+                height={125}
+                style={{ objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(28%) sepia(20%) saturate(600%) hue-rotate(10deg) brightness(85%)' }}
+              />
+              <span className={`${styles.monogramDate} ${styles.monogramDateBelow}`}>25.07.2026</span>
+            </div>
+            <span className={`${styles.monogramDate} ${styles.monogramDateSide}`}>2026</span>
           </div>
 
         </div>

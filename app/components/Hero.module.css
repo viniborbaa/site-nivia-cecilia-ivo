@@ -27,6 +27,12 @@
   margin-top: 0;
 }
 
+@media (max-width: 900px) {
+  .content .heroImage {
+    width: clamp(240px, 70vw, 400px);
+  }
+}
+
 /* Data */
 .date {
   font-family: 'ParisForbel', var(--font-serif);

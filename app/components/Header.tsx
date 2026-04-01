@@ -91,8 +91,8 @@ function MobileMenu({
         <Image
           src="/images/monograma-logo.png"
           alt="Monograma Cecília & Ivo"
-          width={60}
-          height={60}
+          width={160}
+          height={160}
           priority
         />
       </a>

@@ -75,10 +75,9 @@
 /* ─── Navegação mobile ─── */
 .mobileNav {
   display: none;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 1.5rem 1.2rem;
-  gap: 1rem;
+  padding: 0.75rem 1rem;
 }
 
 .monogramMobile {
@@ -92,11 +91,7 @@
 }
 
 .mobileLinks {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem 1.5rem;
-  list-style: none;
+  display: none;
 }
 
 /* ─── Responsividade ─── */
@@ -110,4 +105,11 @@
   .mobileNav {
     display: flex;
   }
+
+  .monogramMobile img {
+    width: 80px;
+    height: 80px;
+  }
+
+
 }
