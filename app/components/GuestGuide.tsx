@@ -42,6 +42,17 @@ export default function GuestGuide() {
           </div>
 
         </div>
+        <p className={styles.credit}>
+          criado por{' '}
+          <a
+            href="https://www.instagram.com/ilustraniviswedding"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.creditLink}
+          >
+            @ilustraniviswedding
+          </a>
+        </p>
       </div>
     </div>
   );
