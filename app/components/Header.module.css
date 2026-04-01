@@ -1,0 +1,113 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #a7754d;
+  background-image: url('/images/pinha-tile.png'), url('/images/pinha-tile.png');
+  background-position: 0 0, 140px 140px;
+  background-repeat: repeat;
+  background-size: 280px;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+/* ─── Navegação desktop ─── */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  min-height: 140px;
+}
+
+.navGroup {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  flex: 1;
+}
+
+/* Grupo direito alinhado à direita */
+.navGroup:last-of-type {
+  justify-content: flex-end;
+}
+
+.navLink {
+  font-family: 'ParisForbel', var(--font-body);
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-cream);
+  transition: color 0.2s ease, opacity 0.2s ease;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.navLink:hover {
+  color: var(--color-gold);
+}
+
+/* Monograma centralizado */
+.monogram {
+  flex-shrink: 0;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.monogram:hover {
+  opacity: 0.8;
+}
+
+.monogram img {
+  object-fit: contain;
+  mix-blend-mode: screen;
+}
+
+/* ─── Navegação mobile ─── */
+.mobileNav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1.5rem 1.2rem;
+  gap: 1rem;
+}
+
+.monogramMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.monogramMobile img {
+  mix-blend-mode: screen;
+}
+
+.mobileLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
+  list-style: none;
+}
+
+/* ─── Responsividade ─── */
+@media (max-width: 900px) {
+  /* Esconde nav desktop */
+  .nav {
+    display: none;
+  }
+
+  /* Exibe menu mobile */
+  .mobileNav {
+    display: flex;
+  }
+}
