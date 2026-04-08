@@ -49,8 +49,8 @@ export default function Header() {
           <Image
             src="/images/monograma-logo.png"
             alt="Monograma Cecília & Ivo"
-            width={200}
-            height={200}
+            width={120}
+            height={120}
             priority
           />
         </a>
@@ -91,8 +91,8 @@ function MobileMenu({
         <Image
           src="/images/monograma-logo.png"
           alt="Monograma Cecília & Ivo"
-          width={160}
-          height={160}
+          width={96}
+          height={96}
           priority
         />
       </a>

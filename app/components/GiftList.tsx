@@ -5,19 +5,19 @@ const giftOptions = [
     id: 'camicado',
     line1: 'LISTA DA',
     line2: 'CAMICADO',
-    href: '#',
+    href: 'https://lista.camicado.com.br/casamentoceciliaeivo',
   },
   {
     id: 'lojas-2001',
     line1: 'LOJAS',
     line2: '2001',
-    href: '#',
+    href: 'https://wa.me/message/WSWSETENV657O1',
   },
   {
     id: 'lista-virtual',
     line1: 'LISTA',
     line2: 'VIRTUAL',
-    href: '#',
+    href: 'https://noivos.casar.com/cecilia-e-ivo',
   },
 ];
 

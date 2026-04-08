@@ -75,7 +75,7 @@ export default function RSVP() {
       <h2 className={styles.title}>CONFIRMAÇÃO<br />DE PRESENÇA</h2>
       <div className={styles.container}>
         <p className={styles.subtitle}>
-          Por favor, confirme sua presença até <strong>25 de junho de 2026</strong>.
+          Por favor, confirme sua presença até <p><strong>17 de julho de 2026</strong></p>.
         </p>
         {/* Formulário */}
         {submitState === 'success' ? (

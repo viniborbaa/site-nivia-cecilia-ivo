@@ -38,7 +38,7 @@
 .navLink {
   font-family: 'ParisForbel', var(--font-body);
   display: block;
-  font-size: 1.4rem;
+  font-size: 1.12rem;
   letter-spacing: 0.04em;
   font-weight: 600;
   text-transform: uppercase;
@@ -56,6 +56,7 @@
 /* Monograma centralizado */
 .monogram {
   flex-shrink: 0;
+  margin-inline: clamp(1.5rem, 4.4vw, 4.5rem);
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -107,8 +108,8 @@
   }
 
   .monogramMobile img {
-    width: 80px;
-    height: 80px;
+    width: 48px;
+    height: 48px;
   }
 
 

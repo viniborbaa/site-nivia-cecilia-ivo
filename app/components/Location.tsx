@@ -58,13 +58,7 @@ export default function Location() {
             style={{ objectFit: 'contain', margin: '2.5rem 0' }}
           />
 
-          <h2 className={styles.sectionTitle}>LOCALIZAÇÃO<br />E HORÁRIOS</h2>
-
-          {/* Data e horário */}
-          <div className={styles.dateTime}>
-            <p className={styles.eventDate}>25 DE JUNHO DE 2026</p>
-            <p className={styles.eventTime}>ÀS 15HORAS</p>
-          </div>
+          <h2 className={styles.sectionTitle}><span>LOCALIZAÇÃO</span><span>E HORÁRIOS</span></h2>
 
           <Image
             src="/images/casa.png"
@@ -74,10 +68,16 @@ export default function Location() {
             style={{ objectFit: 'contain', width: '100%', height: 'auto' }}
           />
 
+          {/* Data e horário */}
+          <div className={styles.dateTime}>
+            <p className={styles.eventDate}>25 de julho de 2026</p>
+            <p className={styles.eventTime}>às 15 horas</p>
+          </div>
+
           {/* Informações do local */}
           <div className={styles.venueInfo}>
-            <h3 className={styles.venueName}>NOGUEIRA GARDEN</h3>
-            <p className={styles.venueAddress}>ESTRADA DE ALDEIA KM.5</p>
+            <h3 className={styles.venueName}>Nogueira Garden</h3>
+            <p className={styles.venueAddress}>Estrada de Aldeia Km.5</p>
             <p className={styles.venueCity}>Camaragibe — PE</p>
           </div>
 
@@ -101,8 +101,8 @@ export default function Location() {
             <h4 className={styles.directionsTitle}>COMO CHEGAR</h4>
             <div className={styles.directionsContent}>
               <p>
-                De carro próprio, o local conta com estacionamento. Ou de carro
-                de aplicativo como Uber e 99.
+              Você pode ir de carro próprio, o local conta com estacionamento. 
+              Ou de carro de aplicativo, como Uber e 99.
               </p>
               <p>
                 Obs.: como será em Aldeia, e num período chuvoso, recomendamos

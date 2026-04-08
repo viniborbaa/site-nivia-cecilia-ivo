@@ -6,6 +6,7 @@ import GiftList from './components/GiftList';
 import RSVP from './components/RSVP';
 import GuestGuide from './components/GuestGuide';
 import styles from './page.module.css';
+import dogs from '../public/images/dogs.png';
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
             <GiftList />
           </section>
           <div className={styles.dogImageWrapper}>
-            <Image src="/images/dogs.png" alt="dogs" fill style={{ objectFit: 'contain' }} />
+            <Image src={dogs} alt="dogs" fill style={{ objectFit: 'contain' }} />
           </div>
           <section id="confirmacao">
             <RSVP />

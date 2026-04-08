@@ -22,13 +22,16 @@
 /* ─── Título da seção ─── */
 .sectionTitle {
   font-family: 'ParisForbel', var(--font-body);
-  font-size: clamp(1.49rem, 4.76vw, 2.38rem);
+  font-size: clamp(1.27rem, 4.05vw, 2.02rem);
   font-weight: normal;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-olive);
   line-height: 1.15;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
 }
 
 /* ─── Título ─── */
@@ -54,7 +57,6 @@
   font-size: clamp(1.4rem, 4.48vw, 2.24rem);
   letter-spacing: 0.03em;
   color: var(--color-dark-brown);
-  text-transform: uppercase;
 }
 
 .eventTime {
@@ -62,7 +64,6 @@
   font-size: clamp(1.14rem, 3vw, 1.44rem);
   letter-spacing: 0.03em;
   color: var(--color-dark-brown);
-  text-transform: uppercase;
 }
 
 /* ─── Imagem do local ─── */
@@ -116,7 +117,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  text-align: justify;
+  text-align: center;
   width: 100%;
 }
 
@@ -164,7 +165,6 @@
   font-size: 1.035rem;
   letter-spacing: 0.03em;
   color: var(--color-dark-brown);
-  text-transform: uppercase;
 }
 
 .venueCity {
@@ -221,5 +221,9 @@
 @media (max-width: 480px) {
   .section {
     padding: 3.5rem 1.25rem;
+  }
+
+  .letter {
+    text-align: center;
   }
 }

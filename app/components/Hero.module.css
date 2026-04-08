@@ -21,7 +21,7 @@
 }
 
 .content .heroImage {
-  width: clamp(400px, 80vw, 900px);
+  width: clamp(299px, 59.8vw, 673px);
   max-width: none;
   height: auto;
   margin-top: 0;
@@ -29,14 +29,20 @@
 
 @media (max-width: 900px) {
   .content .heroImage {
-    width: clamp(240px, 70vw, 400px);
+    width: clamp(179px, 52.4vw, 299px);
   }
 }
 
 /* Data */
 .date {
   font-family: 'ParisForbel', var(--font-serif);
-  font-size: clamp(2.2rem, 6vw, 3.2rem);
+  font-size: clamp(1.65rem, 4.5vw, 2.4rem);
   letter-spacing: 0.05em;
   color: var(--color-cream);
+}
+
+@media (max-width: 480px) {
+  .date {
+    font-size: clamp(1.07rem, 2.92vw, 1.55rem);
+  }
 }
