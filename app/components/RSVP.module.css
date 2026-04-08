@@ -43,6 +43,24 @@
   color: var(--color-caramel);
 }
 
+/* ─── Wrapper que mantém o tamanho mesmo após envio ─── */
+.formWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.successMessage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
 /* ─── Formulário ─── */
 .form {
   width: 100%;
@@ -207,15 +225,6 @@
   padding: 0.75rem 1rem;
   border: 1px solid #9b2335;
   background-color: rgba(155, 35, 53, 0.06);
-}
-
-.successMessage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  text-align: center;
-  padding: 2rem;
 }
 
 .successIcon {

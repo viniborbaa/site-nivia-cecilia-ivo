@@ -75,20 +75,27 @@ export default function RSVP() {
       <h2 className={styles.title}>CONFIRMAÇÃO<br />DE PRESENÇA</h2>
       <div className={styles.container}>
         <p className={styles.subtitle}>
-          Por favor, confirme sua presença até <p><strong>17 de julho de 2026</strong></p>.
+          Por favor, confirme sua presença até <strong>17 de julho de 2026</strong>.
         </p>
         {/* Formulário */}
-        {submitState === 'success' ? (
-          <div className={styles.successMessage}>
-            <span className={styles.successIcon}>◆</span>
-            <h3>Presença confirmada!</h3>
-            <p>
-              Recebemos sua confirmação. Mal podemos esperar para celebrar com
-              você!
-            </p>
-          </div>
-        ) : (
-          <form className={styles.form} onSubmit={handleSubmit} noValidate>
+        <div className={styles.formWrapper}>
+          {submitState === 'success' && (
+            <div className={styles.successMessage}>
+              <span className={styles.successIcon}>◆</span>
+              <h3>Presença confirmada!</h3>
+              <p>
+                Recebemos sua confirmação. Mal podemos esperar para celebrar com
+                você!
+              </p>
+            </div>
+          )}
+          <form
+            className={styles.form}
+            onSubmit={handleSubmit}
+            noValidate
+            aria-hidden={submitState === 'success'}
+            style={{ visibility: submitState === 'success' ? 'hidden' : 'visible' }}
+          >
             {/* Nome completo */}
             <div className={styles.field}>
               <label className={styles.label} htmlFor="name">
@@ -249,7 +256,7 @@ export default function RSVP() {
               {submitState === 'loading' ? 'Enviando...' : 'Confirmar presença'}
             </button>
           </form>
-        )}
+        </div>
       </div>
     </div>
   );
